@@ -12,27 +12,27 @@
 
  ## Steps to generate json server
  
- ### `1. import json server library
-const jsonServer = require('json-server')`
+ ### 1. import json server library
+`const jsonServer = require('json-server')`
 
- ### `2. create our own server to run json file
-const server = jsonServer.create()`
+ ### 2. create our own server to run json file
+`const server = jsonServer.create()`
 
- ### `3. generate a middleware to use in json server
-const middleware = jsonServer.defaults()`
+ ### 3. generate a middleware to use in json server
+`const middleware = jsonServer.defaults()`
 
- ### `4. set up route/path for db.json
-const router = jsonServer.router("db.json")`
+ ### 4. set up route/path for db.json
+`const router = jsonServer.router("db.json")`
 
- ### `5. set up port for server
-const port = 3000 || process.env.PORT`
+ ### 5. set up port for server
+`const port = 3000 || process.env.PORT`
 
- ### `6. use middleware and router to server
-server.use(middleware)
-server.use(router)`
+ ### 6. use middleware and router to server
+`server.use(middleware)`
+`server.use(router)`
 
- ### `7. server listen or run to request
-server.listen(port,()=>{
+ ### 7. server listen or run to request
+`server.listen(port,()=>{
     console.log("Server started at port no : "+port);
 })`
 
